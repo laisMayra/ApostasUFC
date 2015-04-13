@@ -6,7 +6,7 @@
     <%= f.input :cpf %>
     <%= f.input :rg %>
     <%= f.input :telefone %>
-    <%= f.input :endereco %>
+    <%= f.input :endereco, label: "Endereço" %>
     <%= f.input :usuario %>
     <%= f.input :senha %>
     <%= f.input :numeroConta %>
@@ -15,6 +15,6 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.submit "Salvar" %>
   </div>
 <% end %>
