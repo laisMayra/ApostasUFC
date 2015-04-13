@@ -1,0 +1,11 @@
+<%= simple_form_for(@tipo_aposta) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :descricao, label: "Descrição" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit "Salvar" %>
+  </div>
+<% end %>

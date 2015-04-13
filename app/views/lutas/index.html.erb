@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lutas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lutador1</th>
+      <th>Lutador2</th>
+      <th>Arbitro</th>
+      <th>Vencedor</th>
+      <th>Tipovitoria</th>
+      <th>Rounds</th>
+      <th>Horario</th>
+      <th>Data</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lutas.each do |luta| %>
+      <tr>
+        <td><%= luta.lutador1.nome if luta.lutador1 %></td>
+        <td><%= luta.lutador2.nome if luta.lutador2%></td>
+        <td><%= luta.arbitro.nome if luta.arbitro%></td>
+        <td><%= luta.vencedor %></td>
+        <td><%= luta.tipoVitoria %></td>
+        <td><%= luta.rounds %></td>
+        <td><%= luta.horario %></td>
+        <td><%= luta.data %></td>
+        <td><%= link_to 'ver', luta %></td>
+        <td><%= button_to 'Editar', edit_luta_path(luta), :method => :get %></td>
+        <td><%= button_to 'Excluir', luta, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Criar Luta', new_luta_path%>

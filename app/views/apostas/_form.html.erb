@@ -1,0 +1,15 @@
+<%= simple_form_for(@aposta) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :tipoAposta, label_method: :descricao %>
+    <%= f.association :luta, label_method: :data %>
+    <%= f.association :jogador, label_method: :nome %>
+    <%= f.input :resultado %>
+    <%= f.input :valor %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit 'Salvar' %>
+  </div>
+<% end %>

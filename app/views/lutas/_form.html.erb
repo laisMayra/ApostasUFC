@@ -1,0 +1,18 @@
+<%= simple_form_for(@luta) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :lutador1, label_method: :nome %>
+    <%= f.association :lutador2, label_method: :nome %>
+    <%= f.association :arbitro, label_method: :nome %>
+    <%= f.input :vencedor %>
+    <%= f.input :tipoVitoria %>
+    <%= f.input :rounds %>
+    <%= f.input :horario %>
+    <%= f.input :data %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit 'Salvar' %>
+  </div>
+<% end %>

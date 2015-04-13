@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lutador1:</strong>
+  <%= @luta.lutador1.nome if @luta.lutador1  %>
+</p>
+
+<p>
+  <strong>Lutador2:</strong>
+  <%= @luta.lutador2.nome if @luta.lutador2 %>
+</p>
+
+<p>
+  <strong>Arbitro:</strong>
+  <%= @luta.arbitro.nome if @luta.arbitro %>
+</p>
+
+<p>
+  <strong>Vencedor:</strong>
+  <%= @luta.vencedor %>
+</p>
+
+<p>
+  <strong>Tipovitoria:</strong>
+  <%= @luta.tipoVitoria %>
+</p>
+
+<p>
+  <strong>Rounds:</strong>
+  <%= @luta.rounds %>
+</p>
+
+<p>
+  <strong>Horario:</strong>
+  <%= @luta.horario %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @luta.data %>
+</p>
+
+<%= link_to 'Editar', edit_luta_path(@luta) %> |
+<%= link_to 'Voltar', lutas_path %>

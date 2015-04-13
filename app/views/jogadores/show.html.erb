@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @jogador.nome %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @jogador.cpf %>
+</p>
+
+<p>
+  <strong>Rg:</strong>
+  <%= @jogador.rg %>
+</p>
+
+<p>
+  <strong>Telefone:</strong>
+  <%= @jogador.telefone %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @jogador.endereco %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @jogador.usuario %>
+</p>
+
+<p>
+  <strong>Senha:</strong>
+  <%= @jogador.senha %>
+</p>
+
+<p>
+  <strong>Numeroconta:</strong>
+  <%= @jogador.numeroConta %>
+</p>
+
+<p>
+  <strong>Agencia:</strong>
+  <%= @jogador.agencia %>
+</p>
+
+<p>
+  <strong>Banco:</strong>
+  <%= @jogador.banco %>
+</p>
+
+<%= link_to 'Editar', edit_jogador_path(@jogador) %> |
+<%= link_to 'Voltar', jogadores_path %>

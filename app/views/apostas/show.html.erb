@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipoaposta:</strong>
+  <%= @aposta.tipoAposta.descricao if @aposta.tipoAposta %>
+</p>
+
+<p>
+  <strong>Luta:</strong>
+  <%= @aposta.luta.data if @aposta.luta %>
+</p>
+
+<p>
+  <strong>Jogador:</strong>
+  <%= @aposta.jogador.nome if @aposta.jogador%>
+</p>
+
+<p>
+  <strong>Resultado:</strong>
+  <%= @aposta.resultado %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @aposta.valor %>
+</p>
+
+<%= link_to 'Editar', edit_aposta_path(@aposta) %> |
+<%= link_to 'Voltar', apostas_path %>

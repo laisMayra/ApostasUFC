@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tipo Apostas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tipo_apostas.each do |tipo_aposta| %>
+      <tr>
+        <td><%= tipo_aposta.descricao %></td>
+        <td><%= link_to 'Ver', tipo_aposta %></td>
+        <td><%= button_to 'Editar', edit_tipo_aposta_path(tipo_aposta), :method => :get  %></td>
+        <td><%= button_to 'Excluir', tipo_aposta, form: {data: { confirm: 'Are you sure?' }}, method: :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Criar Tipo aposta', new_tipo_aposta_path %>

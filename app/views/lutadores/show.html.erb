@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @lutador.nome %>
+</p>
+
+<p>
+  <strong>Altura:</strong>
+  <%= @lutador.altura %>
+</p>
+
+<p>
+  <strong>Peso:</strong>
+  <%= @lutador.peso %>
+</p>
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @lutador.categoria %>
+</p>
+
+<p>
+  <strong>Especialidade:</strong>
+  <%= @lutador.especialidade %>
+</p>
+
+<p>
+  <strong>Ranking:</strong>
+  <%= @lutador.ranking %>
+</p>
+
+<%= link_to 'Editarar', edit_lutador_path(@lutador) %> |
+<%= link_to 'Voltar', lutadores_path %>

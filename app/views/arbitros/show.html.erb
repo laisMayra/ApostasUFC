@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @arbitro.nome %>
+</p>
+
+<p>
+  <strong>Qtd lutas:</strong>
+  <%= @arbitro.qtd_lutas %>
+</p>
+
+<%= link_to 'Editar', edit_arbitro_path(@arbitro) %> |
+<%= link_to 'Voltar', arbitros_path %>

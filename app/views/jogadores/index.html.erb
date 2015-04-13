@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Jogadores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Cpf</th>
+      <th>Rg</th>
+      <th>Telefone</th>
+      <th>Endereco</th>
+      <th>Usuario</th>
+      <th>Senha</th>
+      <th>Numeroconta</th>
+      <th>Agencia</th>
+      <th>Banco</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jogadores.each do |jogador| %>
+      <tr>
+        <td><%= jogador.nome %></td>
+        <td><%= jogador.cpf %></td>
+        <td><%= jogador.rg %></td>
+        <td><%= jogador.telefone %></td>
+        <td><%= jogador.endereco %></td>
+        <td><%= jogador.usuario %></td>
+        <td><%= jogador.senha %></td>
+        <td><%= jogador.numeroConta %></td>
+        <td><%= jogador.agencia %></td>
+        <td><%= jogador.banco %></td>
+        <td><%= link_to 'Ver', jogador %></td>
+        <td><%= button_to 'Editar', edit_jogador_path(jogador), :method => :get  %></td>
+        <td><%= button_to 'Excluir', jogador, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Criar Jogador', new_jogador_path %>

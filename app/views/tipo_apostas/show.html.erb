@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descrição:</strong>
+  <%= @tipo_aposta.descricao %>
+</p>
+
+<%= link_to 'Editar', edit_tipo_aposta_path(@tipo_aposta) %> |
+<%= link_to 'Voltar', tipo_apostas_path %>

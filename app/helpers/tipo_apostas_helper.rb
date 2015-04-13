@@ -1,0 +1,2 @@
+module TipoApostasHelper
+end
