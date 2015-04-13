@@ -187,20 +187,20 @@ ul#nav li a
   color: #FFF;
   text-decoration: none;} 
   
-ul#nav li.current a
-{ color: #33FF00;
-  background: #33FF00;
-  background: -moz-linear-gradient(#43A9FF, #0043A8);
-  background: -o-linear-gradient(#43A9FF, #0043A8);
-  background: -webkit-linear-gradient(#43A9FF, #0043A8);  
+ul#nav li.active a
+{ color: #FFFF66;
+  background: #FFFFCC ;
+  background: -moz-linear-gradient(#FFFFCC, #202020 );
+  background: -o-linear-gradient(#FFFFCC, #202020 );
+  background: -webkit-linear-gradient(#FFFFCC, #202020 );  
   text-shadow: none;}
   
 ul#nav li:hover a
-{ color: #33FF00;
-  background: #0043A8;
-  background: -moz-linear-gradient(#43A9FF, #0043A8);
-  background: -o-linear-gradient(#43A9FF, #0043A8);
-  background: -webkit-linear-gradient(#43A9FF, #0043A8);
+{ color: #FFFF66;
+  background: #FFFFCC ;
+  background: -moz-linear-gradient(#FFFFCC, #202020 );
+  background: -o-linear-gradient(#FFFFCC, #202020 );
+  background: -webkit-linear-gradient(#FFFFCC, #202020 );  
   text-shadow: none;}
 
 #site_content
@@ -407,3 +407,9 @@ ul img {
   font: normal 130% arial, sans-serif;
   color: #FFF;
   text-shadow: 1px 1px #000;}
+
+.imgIndex{
+  width: 100%;
+  height: 100%;
+
+}
